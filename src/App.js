@@ -1,26 +1,32 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
-  const listeUser = [
-    {id: 1, nom: "Boubacar"},
-    {id: 1, nom: "Amina"}
-  ]
+class App extends Component{
 
+  constructor(){
+    super();
+    this.state = {
+      listeUser : [
+        {id: 1, nom: "Boubacar"},
+        {id: 1, nom: "Amina"}
+      ],
+      count: 0,
+      nom: "boubacar"
+    }
+  }
+  
+
+
+
+render(){
   return (
     <div className="App">
-        <h1>Liste clients</h1>
-        <ul>
-          {
-          listeUser.map((user, id) => <li key={id}>{user.nom}</li>)
-          }
-        </ul>
-        <form>
-          <input type="text" placeholder="Ajouter utilisateurs"/>
-          <button>Confirmer</button>
-        </form>
+    <h1>Bonjour {this.state.nom}</h1>
+        
     </div>
   );
+
+}
 }
 
 export default App;
