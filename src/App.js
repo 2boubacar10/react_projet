@@ -8,11 +8,11 @@ class App extends Component{
 render(){
   return (
     <div>
-      <Boubacar />
+      <Boubacar nom="Eminem"/>
       <br/>
       <hr/>
       <br/>
-      <Rokhaya />
+      <Rokhaya nom="Rokhaya"/>
     </div>
    
   );

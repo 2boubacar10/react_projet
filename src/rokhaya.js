@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-class Boubacar extends Component{
+class Rokhaya extends Component{
 
   constructor(){
     super();
@@ -29,4 +29,4 @@ render(){
 }
 }
 
-export default Boubacar;
+export default Rokhaya;

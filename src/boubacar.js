@@ -14,6 +14,11 @@ class Boubacar extends Component{
       nom: "boubacar"
     }
   }
+
+  addOne(){
+      this.state.count += 1;
+      console.log(this.state.count);
+  }
   
 
 
@@ -21,8 +26,8 @@ class Boubacar extends Component{
 render(){
   return (
     <div className="App">
-    <h1>Bonjour {this.state.nom}</h1>
-        
+    <h1>Bonjour {this.props.nom}</h1>
+        <button onClick={() => this.addOne()}>Ajouter</button>
     </div>
   );
 
