@@ -16,8 +16,9 @@ class Boubacar extends Component{
   }
 
   addOne(){
-      this.state.count += 1;
-      console.log(this.state.count);
+      this.setState({
+          count: this.state.count + 1,
+      })
   }
   
 
@@ -27,6 +28,8 @@ render(){
   return (
     <div className="App">
     <h1>Bonjour {this.props.nom}</h1>
+    
+    <div>Sur le compteur il y'a {this.state.count}</div>
         <button onClick={() => this.addOne()}>Ajouter</button>
     </div>
   );
